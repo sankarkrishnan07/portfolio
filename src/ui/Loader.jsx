@@ -11,11 +11,11 @@ const StyledLoader = styled.div`
   justify-content: center;
   background: #1f1f1f;
   --logo-fill: transparent;
-  --logo-stroke-dashoffset: 3000;
+  --logo-stroke-dashoffset: 1000;
 
   svg {
     height: 250px;
-    stroke-dasharray: 3000;
+    stroke-dasharray: 1000;
     & > * {
       fill: var(--logo-fill);
       stroke-dashoffset: var(--logo-stroke-dashoffset);

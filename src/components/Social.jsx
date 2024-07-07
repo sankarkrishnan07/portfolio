@@ -9,7 +9,7 @@ const SocialLinks = styled.ul`
   gap: 1rem;
   list-style: none;
 
-  li {
+  li a{
     display: inline-flex;
     svg {
       height: 24px;
@@ -28,6 +28,7 @@ function Social() {
             href="https://github.com/sankarkrishnan07"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub"
           >
             <GitHubIcon />
           </a>
@@ -37,6 +38,7 @@ function Social() {
             href="https://linkedin.com/in/b-sankar-krishnan"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
             <LinkedInIcon />
           </a>

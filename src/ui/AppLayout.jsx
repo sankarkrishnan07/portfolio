@@ -64,8 +64,7 @@ function AppLayout() {
         tl.to(loaderRef.current, {
           "--logo-fill": "#fff",
           "--logo-stroke-dashoffset": 0,
-          duration: 3,
-          ease: "power1.in",
+          duration: 1.5,
         }).to(loaderRef.current, {
           opacity: 0,
           onComplete: () => setIsLoading(false),

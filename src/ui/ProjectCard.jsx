@@ -45,22 +45,25 @@ const Year = styled.span`
 `;
 
 function ProjectCard({ project }) {
-  const { title } = project;
+  const { title, tags = [], img, year } = project;
 
   return (
     <StyledProjectCard>
       <header>
         <Heading as="h4">{title}</Heading>
         <Pills>
-          <span>React</span>
-          <span>React Query</span>
-          <span>Supabase</span>
+          {tags.slice(0, 2).map((tag, i) => (
+            <span key={`${title}-tag&${i}`}>{tag}</span>
+          ))}
+          {tags.length > 2 && (
+            <span key={`${title}-more`}>+{tags.length - 2}</span>
+          )}
         </Pills>
       </header>
       <ProjectImg>
-        <img src="/test.png" alt="project" />
+        <img src={`/${img}.png`} alt={title} />
       </ProjectImg>
-      <Year>2024</Year>
+      <Year>{year}</Year>
     </StyledProjectCard>
   );
 }

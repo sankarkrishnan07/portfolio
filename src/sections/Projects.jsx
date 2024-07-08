@@ -9,6 +9,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import PropTypes from "prop-types";
+import { filterOptions, projects } from "../data/projets";
 
 const StyledProjectsWrap = styled.section`
   h3 {
@@ -50,23 +51,9 @@ const Header = styled.header`
   margin-bottom: 1.5rem;
 `;
 
-const filterOptions = [
-  { label: "All", value: "all" },
-  { label: "React", value: "react" },
-  { label: "Vanilla Js", value: "vanillajs" },
-];
-
-const projects = [
-  { title: "React1", key: "react" },
-  { title: "React2", key: "react" },
-  { title: "React3", key: "react" },
-  { title: "Vanilla Js1", key: "vanillajs" },
-  { title: "Vanilla Js2", key: "vanillajs" },
-];
-
 gsap.registerPlugin(ScrollTrigger);
 
-function Projects({innerRef}) {
+function Projects({ innerRef }) {
   const [activeFilter, setActiveFilter] = useState(filterOptions[0]);
 
   const projectsContainer = useRef();
@@ -119,7 +106,7 @@ function Projects({innerRef}) {
         </StyledProjects>
         {filteredProjects.map((project, i) => (
           <Modal.Window id={project.title} key={`Project ${i}`}>
-            <ProjectDetails />
+            <ProjectDetails project={project} />
           </Modal.Window>
         ))}
       </Modal>

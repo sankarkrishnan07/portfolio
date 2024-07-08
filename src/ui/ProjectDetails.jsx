@@ -5,6 +5,7 @@ import Heading from "./Heading";
 import Button from "./Button";
 import CodeIcon from "./CodeIcon";
 import PlayIcon from "./PlayIcon";
+import PropTypes from "prop-types";
 
 const StyledProjectDetails = styled.div`
   margin-top: 1.75rem;
@@ -14,6 +15,7 @@ const StyledProjectDetails = styled.div`
 
   header {
     display: flex;
+    align-items: center;
     gap: 1.5rem;
 
     img {
@@ -53,6 +55,11 @@ const Details = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  align-self: flex-start;
+
+  h3 {
+    margin: 0;
+  }
 `;
 
 const Year = styled.span`
@@ -60,41 +67,56 @@ const Year = styled.span`
   margin-bottom: 0.5rem;
 `;
 
-function ProjectDetails() {
+function ProjectDetails({ project }) {
+  const { title, tags = [], img, year, desc, code, app } = project;
+
   return (
     <StyledProjectDetails>
       <header>
         <ProjectImg size="small">
-          <img src="/test.png" alt="project" />
+          <img src={`/${img}.png`} alt={title} />
         </ProjectImg>
         <Details>
-          <Heading as="h3">Title</Heading>
-          <Year>2024</Year>
+          <Heading as="h3">{title}</Heading>
+          <Year>{year}</Year>
           <Pills>
-            <span>React</span>
-            <span>React Query</span>
-            <span>Supabase</span>
+            {tags.map((tag, i) => (
+              <span key={`${title}-tag${i}`}>{tag}</span>
+            ))}
           </Pills>
         </Details>
       </header>
       <main>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          voluptatibus, a molestias dolorem quam dicta, magnam dolorum veniam
-          delectus doloribus sint officia veritatis sed nam exercitationem
-          beatae aliquam magni? Facilis?
-        </p>
+        <p>{desc}</p>
       </main>
       <footer>
-        <Button as="a" href="#" variant="icon" size="large">
+        <Button
+          as="a"
+          href={`https://github.com/sankarkrishnan07/${code}`}
+          variant="icon"
+          size="large"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <CodeIcon />
         </Button>
-        <Button as="a" href="#" variant="icon" size="large">
+        <Button
+          as="a"
+          href={`https://${app}.vercel.app`}
+          variant="icon"
+          size="large"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <PlayIcon />
         </Button>
       </footer>
     </StyledProjectDetails>
   );
 }
+
+ProjectDetails.propTypes = {
+  project: PropTypes.object,
+};
 
 export default ProjectDetails;

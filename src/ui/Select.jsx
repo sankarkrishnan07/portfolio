@@ -62,7 +62,6 @@ const SelectWrap = styled.div`
   max-width: 150px;
   width: 100%;
   font-size: 0.875rem;
-  font-weight: 300;
 
   display: none;
 

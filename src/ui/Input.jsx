@@ -5,7 +5,6 @@ const Input = styled.input`
   border: none;
   background: rgb(255, 255, 255, 0.1);
   font-size: 0.875rem;
-  font-family: monospace;
   outline: none;
 
   &:focus,

@@ -17,7 +17,6 @@ const Intro = styled.div`
 `;
 
 const StyledLanding = styled.section`
-  font-family: "Major Mono Display", monospace;
   display: flex;
   align-items: center;
   justify-content: center;

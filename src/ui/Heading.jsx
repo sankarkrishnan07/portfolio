@@ -20,7 +20,6 @@ const Heading = styled.h1`
     props.as === "h3" &&
     css`
       font-size: 1.5rem;
-      font-weight: 200;
       margin-bottom: 1.5rem;
 
       @media (max-width: 650px) {
@@ -32,8 +31,8 @@ const Heading = styled.h1`
     props.as === "h4" &&
     css`
       font-size: 1rem;
-      font-weight: 300;
     `}
+    font-weight: 400;
 `;
 
 Heading.defaultProps = {

@@ -36,7 +36,6 @@ const Time = styled.span`
   top: 40%;
   background: #1f1f1f;
   z-index: 1;
-  font-weight: 500;
 
   &:before {
     content: "";
@@ -66,7 +65,6 @@ const Card = styled.li`
 
     ${Heading} {
       color: #61892f;
-      font-weight: 500;
     }
 
     small {

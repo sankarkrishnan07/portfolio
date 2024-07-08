@@ -49,9 +49,9 @@ function About({ innerRef }) {
       <Heading as="h3">About</Heading>
       <StyledAbout>
         <p>
-          I graduated with a Bachelor of Enginerring in Mechanical Engineering
+          I graduated with a Bachelor of Engineering in Mechanical Engineering
           from Kumaraguru College of Technology, securing a CGPA of 8.88. My
-          Career began as Packaged App Development Associate in Accenture and I
+          career began as Packaged App Development Associate in Accenture and I
           have since evolved into a passionate web developer. I am always
           curious to learn new things and enjoy sketching and desgining logos as
           well. Checkout my resume to know more!

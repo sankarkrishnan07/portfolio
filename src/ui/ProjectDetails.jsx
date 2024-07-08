@@ -26,7 +26,6 @@ const StyledProjectDetails = styled.div`
 
   main p {
     font-size: 0.875rem;
-    font-weight: 300;
   }
 
   footer {

@@ -15,7 +15,6 @@ const StyledFilter = styled.div`
 
 const FilterButton = styled.button`
   font-size: 1rem;
-  font-weight: 300;
   border-radius: 4px;
   background: transparent;
   box-shadow: 0 0 2px 0 #3f3f3f;
@@ -25,7 +24,6 @@ const FilterButton = styled.button`
     props.active &&
     css`
       background: #3f3f3f;
-      font-weight: 400;
     `}
 `;
 

@@ -6,7 +6,6 @@ const StyledFormInput = styled.div`
 `;
 
 const Error = styled.span`
-  font-family: monospace;
   font-size: 0.75rem;
   color: #f9002ac1;
   position: absolute;

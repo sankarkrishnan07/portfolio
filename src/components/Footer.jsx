@@ -13,12 +13,11 @@ const FooterInfo = styled.div`
   text-align: right;
 
   p {
-    font-size: 12px;
+    font-size: 14px;
   }
 `;
 
 const StyledFooter = styled.footer`
-  font-family: "Major Mono Display", monospace;
   box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.1);
 
   & > div {
@@ -38,14 +37,6 @@ const StyledFooter = styled.footer`
       align-items: unset;
       flex-direction: column;
       text-align: left;
-
-      span {
-        font-size: 12px;
-      }
-
-      p {
-        font-size: 10px;
-      }
 
       svg {
         height: 20px;

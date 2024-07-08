@@ -7,7 +7,6 @@ import { useRef } from "react";
 import gsap from "gsap/all";
 
 const StyledHeader = styled.header`
-  font-family: "Major Mono Display", monospace;
   background: #1f1f1f;
   position: sticky;
   top: 0;

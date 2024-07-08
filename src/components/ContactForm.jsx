@@ -53,7 +53,7 @@ const FormContainer = styled.div`
   }
 `;
 
-function ContactForm({ handleClose }) {
+function ContactForm() {
   const { register, formState, handleSubmit, reset } = useForm();
   const { isSubmitting, errors } = formState;
 
@@ -74,7 +74,6 @@ function ContactForm({ handleClose }) {
       );
       reset();
       toast.success("Email Sent Successfully!");
-      handleClose();
     } catch (e) {
       toast.error("Something went wrong!");
     }

@@ -20,6 +20,7 @@ const GlobalStyles = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: inherit;
 }
 
 body {
@@ -43,6 +44,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 
 `;
 export default GlobalStyles;

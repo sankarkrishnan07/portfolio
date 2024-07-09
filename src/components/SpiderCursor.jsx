@@ -18,8 +18,7 @@ const StyledSpiderCursor = styled.div`
 function SpiderCursor() {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
   const [isMoving, setIsMoving] = useState(false);
-
-  const wrapRef = useRef();
+  
   const spiderRef = useRef();
   const lineRef = useRef();
   const timerRef = useRef();

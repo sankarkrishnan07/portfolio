@@ -53,7 +53,7 @@ function About({ innerRef }) {
           from Kumaraguru College of Technology, securing a CGPA of 8.88. My
           career began as Packaged App Development Associate in Accenture and I
           have since evolved into a passionate web developer. I am always
-          curious to learn new things and enjoy sketching and desgining logos as
+          curious to learn new things and enjoy sketching and designing logos as
           well. Checkout my resume to know more!
         </p>
         <TimeLineCard />

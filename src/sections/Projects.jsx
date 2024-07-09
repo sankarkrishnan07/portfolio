@@ -22,7 +22,7 @@ const StyledProjectsWrap = styled.section`
 const StyledProjects = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, 18.75rem);
-  grid-template-rows: repeat(auto-fit, 10.875rem);
+  align-content: start;
   justify-content: center;
   gap: 6rem 3rem;
   height: calc(100vh - 175px);

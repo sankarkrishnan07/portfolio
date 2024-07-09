@@ -2,8 +2,6 @@ import styled from "styled-components";
 import ContactForm from "./ContactForm";
 import Social from "./Social";
 import PropTypes from "prop-types";
-// import { useGSAP } from "@gsap/react";
-// import { ScrollTrigger } from "gsap/all";
 
 const FooterInfo = styled.div`
   display: flex;
@@ -46,18 +44,6 @@ const StyledFooter = styled.footer`
 `;
 
 function Footer({ innerRef }) {
-  // useGSAP(() => {
-  //   ScrollTrigger.create({
-  //     trigger: innerRef.current,
-  //     start: "1px bottom",
-  //     end: "bottom bottom",
-  //     snap: {
-  //       snapTo: 1,
-  //       duration: 0.5,
-  //       ease: "power1.inOut",
-  //     },
-  //   });
-  // });
 
   return (
     <StyledFooter ref={innerRef}>

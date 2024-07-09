@@ -23,6 +23,16 @@ const GlobalStyles = createGlobalStyle`
   font-family: inherit;
 }
 
+html {
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 70px;
+  scroll-behavior: smooth;
+
+  @media (max-width: 700px) {
+    scroll-padding-top: 60px;
+  }
+}
+
 body {
   background: #1f1f1f;
   &::-webkit-scrollbar {

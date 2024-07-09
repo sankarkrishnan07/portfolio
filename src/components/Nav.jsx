@@ -120,8 +120,7 @@ function Nav({ sectionRefs }) {
 
   function handleNav(i) {
     window.scrollTo({
-      top:
-        sectionRefs[i].current.offsetTop - (window.innerWidth < 700 ? 60 : 70),
+      top: sectionRefs[i].current.offsetTop,
       behavior: "smooth",
     });
     handleToggle();

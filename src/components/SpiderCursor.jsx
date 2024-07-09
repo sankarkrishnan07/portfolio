@@ -10,7 +10,7 @@ const StyledSpiderCursor = styled.div`
   pointer-events: none;
   z-index: 9999;
 
-  @media (max-width: 700px) {
+  @media (max-width: 1024px) {
     display: none;
   }
 `;
@@ -18,7 +18,7 @@ const StyledSpiderCursor = styled.div`
 function SpiderCursor() {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
   const [isMoving, setIsMoving] = useState(false);
-  
+
   const spiderRef = useRef();
   const lineRef = useRef();
   const timerRef = useRef();

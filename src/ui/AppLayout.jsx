@@ -9,7 +9,7 @@ import { useRef, useState } from "react";
 import About from "../sections/About";
 import Footer from "../components/Footer";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/all";
+// import { ScrollTrigger } from "gsap/all";
 import Loader from "./Loader";
 import gsap from "gsap";
 
@@ -71,22 +71,22 @@ function AppLayout() {
         });
       }
 
-      if (mainRef.current) {
-        const sections = Array.from(mainRef.current.children);
+      // if (mainRef.current) {
+      //   const sections = Array.from(mainRef.current.children);
 
-        sections.forEach((section) => {
-          ScrollTrigger.create({
-            trigger: section,
-            start: `top bottom`,
-            end: `bottom bottom`,
-            snap: {
-              snapTo: 1,
-              duration: 0.5,
-              ease: "power1.inOut",
-            },
-          });
-        });
-      }
+      //   sections.forEach((section) => {
+      //     ScrollTrigger.create({
+      //       trigger: section,
+      //       start: `top bottom`,
+      //       end: `bottom bottom`,
+      //       snap: {
+      //         snapTo: 1,
+      //         duration: 0.5,
+      //         ease: "power1.inOut",
+      //       },
+      //     });
+      //   });
+      // }
     },
     { dependencies: [isLoading] }
   );

@@ -17,7 +17,6 @@ const Main = styled.main`
   width: 100%;
   margin: 0 auto;
   padding: 0 3rem;
-  scroll-behavior: smooth;
 
   & > section {
     height: calc(100vh - 4.375rem);
@@ -25,7 +24,6 @@ const Main = styled.main`
     background: #1f1f1f;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    scroll-behavior: smooth;
 
     &:not(&:last-child) {
       box-shadow: 0 -1px 0 0 inset rgba(255, 255, 255, 0.1);

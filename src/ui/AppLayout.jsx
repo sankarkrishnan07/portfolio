@@ -22,8 +22,8 @@ const Main = styled.main`
     height: calc(100vh - 4.375rem);
     padding: 1.5rem 0;
     background: #1f1f1f;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
 
     &:not(&:last-child) {
       box-shadow: 0 -1px 0 0 inset rgba(255, 255, 255, 0.1);

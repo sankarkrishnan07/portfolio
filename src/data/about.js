@@ -1,6 +1,6 @@
 export const about = [
     {
-      time: "2023",
+      time: "Present",
       title: "Frontend Development Analyst - Accenture",
       timeSpan: "Jun 2022 - Present",
     },

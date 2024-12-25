@@ -25,6 +25,15 @@ export const projects = [
     key: "fullstack",
   },
   {
+    title: "Manage Users",
+    year: "2024",
+    img:"manage-users",
+    tags: ["React", "Redux Toolkit", "React Router", "Styled Components"],
+    desc:'A feature-rich user management application built using React, Redux Toolkit (RTK), and React Router, with a sleek and modern interface designed using Styled Components. The app provides seamless navigation and efficient global state management, showcasing best practices in React development. With its scalable architecture and clean design, this project emphasizes maintainability and delivers a smooth user experience.',
+    app:'sk-user-management',
+    key:'react'
+  },
+  {
     title: "WorlWise",
     year: "2024",
     img: "worldwise",

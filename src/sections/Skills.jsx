@@ -145,8 +145,8 @@ const SkillOuter = styled(Skill)`
   }
 
   @media (max-width: 650px) {
-    transform-origin: 160px;
-    transform: translateX(-110px)
+    transform-origin: 170px;
+    transform: translateX(-120px)
       rotate(calc(360deg / ${(props) => props.length} * ${(props) => props.i}));
   }
 `;
@@ -162,8 +162,8 @@ const SkillInner = styled(Skill)`
   }
 
   @media (max-width: 650px) {
-    transform-origin: 110px;
-    transform: translateX(-60px)
+    transform-origin: 120px;
+    transform: translateX(-70px)
       rotate(calc(360deg / ${(props) => props.length} * ${(props) => props.i}));
   }
 `;

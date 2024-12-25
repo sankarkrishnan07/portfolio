@@ -14,13 +14,13 @@ const StyledAbout = styled.div`
     grid-template-columns: 1fr;
 
     p {
-      padding-bottom: 1rem;
+      padding-bottom: 1.5rem;
     }
   }
 
   @media (max-width: 650px) {
     p {
-      font-size: 12px;
+      font-size: 0.75rem;
     }
   }
 `;

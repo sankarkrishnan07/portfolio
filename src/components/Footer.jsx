@@ -17,8 +17,8 @@ const FooterInfo = styled.div`
 
 const StyledFooter = styled.footer`
   box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.1);
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+  /* scroll-snap-align: start;
+  scroll-snap-stop: always; */
 
   & > div {
     padding: 1.5rem 3rem;

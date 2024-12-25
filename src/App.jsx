@@ -3,12 +3,14 @@ import AppLayout from "./ui/AppLayout";
 import { StyleSheetManager } from "styled-components";
 import emotionIsPropValid from "@emotion/is-prop-valid";
 import GlobalStyles from "./ui/GlobalStyles";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
     <StyleSheetManager shouldForwardProp={shouldForwardProp}>
       <GlobalStyles />
       <AppLayout />
+      <Analytics />
       <Toaster
         position="top-center"
         gutter={12}

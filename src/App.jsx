@@ -4,6 +4,7 @@ import { StyleSheetManager } from "styled-components";
 import emotionIsPropValid from "@emotion/is-prop-valid";
 import GlobalStyles from "./ui/GlobalStyles";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <GlobalStyles />
       <AppLayout />
       <Analytics />
+      <SpeedInsights />
       <Toaster
         position="top-center"
         gutter={12}

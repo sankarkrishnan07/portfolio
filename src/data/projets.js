@@ -7,6 +7,16 @@ export const filterOptions = [
 
 export const projects = [
   {
+    title: "The Wild Oasis - Client",
+    year: "2024",
+    img: "the-wild-oasis-client",
+    tags: ["Supabase", "Next JS", "Auth.js", "Tailwind CSS"],
+    desc: "A sleek and intuitive client-facing app, built with Next.js, enables users to log in and create bookings effortlessly. The app integrates Supabase for a real-time backend, ensuring seamless data management, and Auth.js for secure and reliable authentication. Tailwind CSS enhances the design with a responsive and modern UI. This app is crafted for usability, offering a streamlined booking experience for all users. Future updates may focus on adding more features and improving customization options for clients.",
+    code: "the-wild-oasis-client",
+    app: "sk-the-wild-oasis-client",
+    key: "fullstack",
+  },
+  {
     title: "The Wild Oasis",
     year: "2024",
     img: "the-wild-oasis",
@@ -27,11 +37,12 @@ export const projects = [
   {
     title: "Manage Users",
     year: "2024",
-    img:"manage-users",
+    img: "manage-users",
     tags: ["React", "Redux Toolkit", "React Router", "Styled Components"],
-    desc:'A feature-rich user management application built using React, Redux Toolkit (RTK), and React Router, with a sleek and modern interface designed using Styled Components. The app provides seamless navigation and efficient global state management, showcasing best practices in React development. With its scalable architecture and clean design, this project emphasizes maintainability and delivers a smooth user experience.',
-    app:'sk-user-management',
-    key:'react'
+    desc: "A feature-rich user management application built using React, Redux Toolkit (RTK), and React Router, with a sleek and modern interface designed using Styled Components. The app provides seamless navigation and efficient global state management, showcasing best practices in React development. With its scalable architecture and clean design, this project emphasizes maintainability and delivers a smooth user experience.",
+    app: "sk-user-management",
+    code: "user-management",
+    key: "react",
   },
   {
     title: "WorlWise",

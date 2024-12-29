@@ -80,7 +80,7 @@ function Projects({ innerRef }) {
   const filteredProjects =
     activeFilter.value === "all"
       ? projects
-      : projects.filter((project) => project.key === activeFilter.value);
+      : projects.filter((project) => project.keys.includes(activeFilter.value));
 
   return (
     <StyledProjectsWrap ref={innerRef}>

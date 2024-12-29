@@ -10,7 +10,7 @@ export const projects = [
     title: "The Wild Oasis - Client",
     year: "2024",
     img: "the-wild-oasis-client",
-    tags: ["Supabase", "Next JS", "Auth.js", "Tailwind CSS"],
+    tags: ["Next JS", "Auth.js", "Tailwind CSS", "Supabase"],
     desc: "A sleek and intuitive client-facing app, built with Next.js, enables users to log in and create bookings effortlessly. The app integrates Supabase for a real-time backend, ensuring seamless data management, and Auth.js for secure and reliable authentication. Tailwind CSS enhances the design with a responsive and modern UI. This app is crafted for usability, offering a streamlined booking experience for all users. Future updates may focus on adding more features and improving customization options for clients.",
     code: "the-wild-oasis-client",
     app: "sk-the-wild-oasis-client",

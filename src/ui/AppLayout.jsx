@@ -19,7 +19,7 @@ const Main = styled.main`
   padding: 0 3rem;
 
   & > section {
-    height: calc(100vh - 4.375rem);
+    min-height: calc(100vh - 4.375rem);
     padding: 1.5rem 0;
     background: #1f1f1f;
     /* scroll-snap-align: start;
@@ -34,7 +34,7 @@ const Main = styled.main`
     padding: 0 1.5rem;
 
     & > section {
-      height: calc(100vh - 3.75rem);
+      min-height: calc(100vh - 3.75rem);
     }
   }
 `;

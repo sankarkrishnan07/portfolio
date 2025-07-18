@@ -1,8 +1,13 @@
 export const about = [
     {
       time: "Now",
+      title: "Consultant - Deloitte",
+      timeSpan: "Feb 2025 - Present",
+    },
+    {
+      time: "2025",
       title: "Frontend Development Analyst - Accenture",
-      timeSpan: "Jun 2022 - Present",
+      timeSpan: "Jun 2022 - Feb 2025",
     },
     {
       time: "2022",
